@@ -22,8 +22,10 @@
            fetch="https://github.com/Havoc-Devices"
            revision="pie" />
 
-  <!-- AOSP Projects -->
+   <remote name="r3dmanx"
+           fetch="ssh://git@github.com/R3DMaNX/" />
 
+  <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -717,7 +719,7 @@
   <!-- Remove unused AOSP repos -->
   <include name="snippets/remove.xml" />
 
-  <!-- Havoc additions -->
-  <include name="snippets/havoc.xml" />
+  <!-- SixROM additions -->
+  <include name="snippets/six.xml" />
 
 </manifest>

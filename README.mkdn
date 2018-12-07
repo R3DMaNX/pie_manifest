@@ -1,10 +1,10 @@
-Havoc-OS
+SixROM
 ===========
 
 
 Getting Started
 ---------------
-To get started with the Havoc-OS sources, you'll need to get
+To get started with the SixROM sources, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/version-control.html).
 
 
@@ -16,7 +16,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/havoc
+    mkdir -p ~/sixrom
 
 
 Install the Repository
@@ -29,7 +29,7 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 You may need to reboot for these changes to take effect.
 Now enter the following to initialize the repository:
 
-    cd ~/havoc
+    cd ~/sixrom
 
 
 Repositories:
@@ -37,7 +37,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 ----------------------------------------
-    repo init -u https://github.com/Havoc-OS/android_manifest.git -b pie && repo sync -j16
+    repo init -u https://github.com/R3DMaNX/manifest.git -b pie-r3ds && repo sync -j16
 
 
 Building the System
@@ -50,9 +50,3 @@ Initialize the environment with the envsetup.sh script. Note that replacing "sou
     brunch
 
 Enter the number of the build you want to start and press enter
-
-
-Applying for Maintainership
----------------
-
-If you have successfully built for your device and want to apply for maintainership then drop in a message to SKULSHADY on Telegram or XDA.
