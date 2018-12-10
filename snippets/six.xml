@@ -41,7 +41,7 @@
   <project path="kernel/google/wahoo" name="kernel_google_wahoo" groups="device,wahoo" remote="r3dmanx" revision="pie-r3ds" />
 
   <!-- Proprietary -->
-  <project path="vendor/google/walleye" name="vendor_google_walleye" remote="r3dmanx" revision="pie-r3ds-dec" />
+  <project path="vendor/google/walleye" name="vendor_google_walleye" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/googleapps" name="pixel2_gapps" clone-depth="1" remote="r3dmanx" revision="pie-r3ds" />
 
   <!-- Havoc repos -->
