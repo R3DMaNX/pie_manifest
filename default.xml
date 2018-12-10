@@ -25,6 +25,9 @@
    <remote name="r3dmanx"
            fetch="ssh://git@github.com/R3DMaNX/" />
 
+  <remote  name="nephilimrom"
+           fetch="https://github.com/NephilimRom/" />
+
   <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
