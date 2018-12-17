@@ -35,6 +35,7 @@
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SixSettings" name="oreo_packages_apps_SiXPenguins" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/Updates" name="packages_apps_SixUpdates" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="r3dmanx" revision="pie-r3ds" />
