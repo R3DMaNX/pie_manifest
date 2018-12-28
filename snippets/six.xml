@@ -45,6 +45,7 @@
   <project path="packages/providers/WeatherProvider" name="packages_providers_WeatherProvider" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="prebuilts/go/linux-x86" name="prebuilts_go_linux-x86" remote="r3dmanx" revision="pie-r3ds" />
   <project path="system/core" name="system_core" remote="r3dmanx" revision="pie-r3ds" />
   <project path="system/sepolicy" name="system_sepolicy" remote="r3dmanx" revision="pie-r3ds" />
   <project path="system/vold" name="system_vold" remote="r3dmanx" revision="pie-r3ds" />
@@ -136,7 +137,6 @@
   <project path="hardware/ril-caf" name="android_hardware_qcom_ril" remote="havoc" />
   <project path="libcore" name="android_libcore" remote="havoc" />
   <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="havoc" />
-  <project path="prebuilts/go/linux-x86" name="android_prebuilts_go_linux-x86" remote="havoc" />
   <project path="prebuilts/r8" name="android_prebuilts_r8" remote="havoc" />
   <project path="system/bt" name="android_system_bt" remote="havoc" />
   <project path="system/keymaster" name="android_system_keymaster" remote="havoc" />
