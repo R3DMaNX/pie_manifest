@@ -39,6 +39,7 @@
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SixSettings" name="oreo_packages_apps_SiXPenguins" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/SixOTA" name="packages_apps_R3Ds_OTA" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="r3dmanx" revision="pie-r3ds" />
@@ -64,13 +65,6 @@
   <!-- Proprietary -->
   <project path="vendor/google/walleye" name="vendor_google_walleye" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/googleapps" name="pixel2_gapps" clone-depth="1" remote="r3dmanx" revision="pie-r3ds" />
-
-  <!-- OTA
-  <project path="packages/apps/SixOTA" name="packages_apps_R3Ds_OTA" remote="r3dmanx" revision="pie-r3ds" />
-  <project path="ota" name="OTA" remote="nephilimrom" revision="pie-r3ds" >
-    <copyfile src="ota_conf" dest="ota_conf" />
-  <project path="packages/apps/SixUpdates" name="packages_apps_SixUpdates" remote="r3dmanx" revision="pie-r3ds" />
-  </project> -->
 
   <!-- Havoc repos -->
   <project path="art" name="android_art" remote="havoc" />

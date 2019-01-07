@@ -17,16 +17,12 @@
   <remote  name="havoc"
            fetch="https://github.com/Havoc-OS"
            revision="pie" />
-		   
-  <remote  name="havoc-devices"
-           fetch="https://github.com/Havoc-Devices"
-           revision="pie" />
 
    <remote name="r3dmanx"
            fetch="ssh://git@github.com/R3DMaNX/" />
 
-  <remote  name="nephilimrom"
-           fetch="https://github.com/NephilimRom/" />
+  <remote  name="sixpie"
+           fetch="https://github.com/SiX-Pie/" />
 
   <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
