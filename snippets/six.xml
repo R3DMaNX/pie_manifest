@@ -56,6 +56,7 @@
   <project path="system/vold" name="system_vold" remote="r3dmanx" revision="pie-r3ds" />
   <project path="system/extras" name="system_extras" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/six" name="vendor_six_r3ds" remote="r3dmanx" revision="pie-r3ds" />
 
   <!-- Pixel 2 -->
@@ -140,7 +141,6 @@
   <project path="system/netd" name="android_system_netd" remote="havoc" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="havoc" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="havoc" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="havoc" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="havoc" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="havoc" />
 
