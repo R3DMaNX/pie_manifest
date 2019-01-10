@@ -20,6 +20,7 @@
   </project>
   <project path="bootable/recovery" name="bootable_recovery" remote="r3dmanx" revision="pie-r3ds" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="external/zlib" name="external_zlib" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/av" name="frameworks_av" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/base" name="oreo_frameworks_base" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/native" name="frameworks_native" remote="r3dmanx" revision="pie-r3ds" />
@@ -95,7 +96,6 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="havoc" />
   <project path="external/turbine" name="android_external_turbine" remote="havoc" />
   <project path="external/vixl" name="android_external_vixl" remote="havoc" />
-  <project path="external/zlib" name="android_external_zlib" remote="havoc" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="havoc" />
   <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="havoc" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="havoc" />
