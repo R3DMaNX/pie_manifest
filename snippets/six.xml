@@ -18,6 +18,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="build/blueprint" name="build_blueprint" groups="pdk,tradefed" remote="r3dmanx" revision="pie-r3ds" />
   <project path="bootable/recovery" name="bootable_recovery" remote="r3dmanx" revision="pie-r3ds" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="r3dmanx" revision="pie-r3ds" />
   <project path="external/zlib" name="external_zlib" remote="r3dmanx" revision="pie-r3ds" />
