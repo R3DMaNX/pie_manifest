@@ -11,18 +11,15 @@
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <remote  name="havoc"
-           fetch="https://github.com/Havoc-OS"
-           revision="pie" />
-
    <remote name="r3dmanx"
            fetch="ssh://git@github.com/R3DMaNX/" />
 
   <remote  name="sixpie"
            fetch="https://github.com/SiX-Pie/" />
+
+  <remote  name="pienine"
+           fetch="https://github.com/Pie-Nine/" 
+           revision="pie" />
 
   <!-- AOSP Projects -->
   <project path="build/make" name="platform/build" groups="pdk" >

@@ -3,6 +3,7 @@
 
   <!-- R3Ds repos -->
   <project path="manifest" name="r3ds_manifest" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="art" name="art" remote="r3dmanx" revision="pie-r3ds" />
   <project path="bionic" name="bionic" remote="r3dmanx" revision="pie-r3ds" />
   <project path="build/make" name="six_build" remote="r3dmanx" revision="pie-r3ds" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -21,7 +22,6 @@
   <project path="build/blueprint" name="build_blueprint" groups="pdk,tradefed" remote="r3dmanx" revision="pie-r3ds" />
   <project path="bootable/recovery" name="bootable_recovery" remote="r3dmanx" revision="pie-r3ds" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="r3dmanx" revision="pie-r3ds" />
-  <project path="external/zlib" name="external_zlib" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/av" name="frameworks_av" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/base" name="oreo_frameworks_base" remote="r3dmanx" revision="pie-r3ds" />
   <project path="frameworks/native" name="frameworks_native" remote="r3dmanx" revision="pie-r3ds" />
@@ -29,7 +29,6 @@
   <project path="hardware/interfaces" name="hardware_interfaces" remote="r3dmanx" revision="pie-r3ds" />
   <project path="hardware/havoc/telephony" name="hardware_six_telephony" remote="r3dmanx" revision="pie-r3ds" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="r3dmanx" revision="pie-r3ds" />
-  <project path="hardware/qcom/data/ipacfg-mgr" name="hardware_qcom_data_ipacfg-mgr" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="r3dmanx" revision="pie-r3ds" />
@@ -38,6 +37,7 @@
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Settings" name="oreo_packages_apps_Settings" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="r3dmanx" revision="pie-r3ds" />
@@ -59,7 +59,6 @@
   <project path="system/vold" name="system_vold" remote="r3dmanx" revision="pie-r3ds" />
   <project path="system/extras" name="system_extras" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="r3dmanx" revision="pie-r3ds" />
-  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/six" name="vendor_six_r3ds" remote="r3dmanx" revision="pie-r3ds" />
 
   <!-- Pixel 2 -->
@@ -71,78 +70,79 @@
   <project path="vendor/google/walleye" name="vendor_google_walleye" remote="r3dmanx" revision="pie-r3ds" />
   <project path="vendor/googleapps" name="pixel2_gapps" clone-depth="1" remote="r3dmanx" revision="pie-r3ds" />
 
-  <!-- Havoc repos -->
-  <project path="art" name="android_art" remote="havoc" />
-  <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="havoc" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="havoc" />
-  <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="havoc" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="havoc" />
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="havoc" />
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="havoc" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="havoc" />
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="havoc" />
-  <project path="external/exfat" name="android_external_exfat" remote="havoc" />
-  <project path="external/expat" name="android_external_expat" remote="havoc" />
-  <project path="external/freetype" name="android_external_freetype" remote="havoc" />
-  <project path="external/jemalloc" name="android_external_jemalloc" remote="havoc" />
-  <project path="external/json-c" name="android_external_json-c" remote="havoc" />
-  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="havoc" />
-  <project path="external/libpng" name="android_external_libpng" remote="havoc" />
-  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="havoc" />
-  <project path="external/perfetto" name="android_external_perfetto" remote="havoc" />
-  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="havoc" />
-  <project path="external/skia" name="android_external_skia" remote="havoc" />
-  <project path="external/skqp" name="android_external_skqp" remote="havoc" />
-  <project path="external/sqlite" name="android_external_sqlite" remote="havoc" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="havoc" />
-  <project path="external/turbine" name="android_external_turbine" remote="havoc" />
-  <project path="external/vixl" name="android_external_vixl" remote="havoc" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="havoc" />
-  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="havoc" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="havoc" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="havoc" />
-  <project path="frameworks/support" name="android_frameworks_support" remote="havoc" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="havoc" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="havoc" />
-  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="havoc" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="havoc" />
-  <project path="hardware/qcom/audio-caf-msm8916" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8916" />
-  <project path="hardware/qcom/audio-caf-msm8952" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8952" />
-  <project path="hardware/qcom/audio-caf-msm8960" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8960" />
-  <project path="hardware/qcom/audio-caf-msm8974" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8974" />
-  <project path="hardware/qcom/audio-caf-msm8994" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8994" />
-  <project path="hardware/qcom/audio-caf-msm8996" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8996" />
-  <project path="hardware/qcom/audio-caf-msm8998" name="android_hardware_qcom_audio" remote="havoc" revision="pie-caf-8998" />
-  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="havoc" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="havoc" />
-  <project path="hardware/qcom/display-caf-msm8916" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8916" />
-  <project path="hardware/qcom/display-caf-msm8952" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8952" />
-  <project path="hardware/qcom/display-caf-msm8960" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8960" />
-  <project path="hardware/qcom/display-caf-msm8974" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8974" />
-  <project path="hardware/qcom/display-caf-msm8994" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8994" />
-  <project path="hardware/qcom/display-caf-msm8996" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8996" />
-  <project path="hardware/qcom/display-caf-msm8998" name="android_hardware_qcom_display" remote="havoc" revision="pie-caf-8998" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="havoc" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="havoc" />
-  <project path="hardware/qcom/media-caf-msm8916" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8916" />
-  <project path="hardware/qcom/media-caf-msm8952" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8952" />
-  <project path="hardware/qcom/media-caf-msm8960" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8960" />
-  <project path="hardware/qcom/media-caf-msm8974" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8974" />
-  <project path="hardware/qcom/media-caf-msm8994" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8994" />
-  <project path="hardware/qcom/media-caf-msm8996" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8996" />
-  <project path="hardware/qcom/media-caf-msm8998" name="android_hardware_qcom_media" remote="havoc" revision="pie-caf-8998" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="havoc" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="havoc" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="havoc" />
-  <project path="hardware/ril-caf" name="android_hardware_qcom_ril" remote="havoc" />
-  <project path="libcore" name="android_libcore" remote="havoc" />
-  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="havoc" />
-  <project path="system/keymaster" name="android_system_keymaster" remote="havoc" />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="havoc" />
-  <project path="system/netd" name="android_system_netd" remote="havoc" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="havoc" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="havoc" />
-  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="havoc" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="havoc" />
+  <!-- Six repos -->
+  <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="pienine" />
+  <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="pienine" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pienine" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="pienine" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="pienine" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="pienine" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="pienine" />
+  <project path="external/exfat" name="android_external_exfat" remote="pienine" />
+  <project path="external/expat" name="android_external_expat" remote="pienine" />
+  <project path="external/freetype" name="android_external_freetype" remote="pienine" />
+  <project path="external/jemalloc" name="android_external_jemalloc" remote="pienine" />
+  <project path="external/json-c" name="android_external_json-c" remote="pienine" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="pienine" />
+  <project path="external/libpng" name="android_external_libpng" remote="pienine" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="pienine" />
+  <project path="external/perfetto" name="android_external_perfetto" remote="pienine" />
+  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="pienine" />
+  <project path="external/skia" name="android_external_skia" remote="pienine" />
+  <project path="external/skqp" name="android_external_skqp" remote="pienine" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="pienine" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="pienine" />
+  <project path="external/turbine" name="android_external_turbine" remote="pienine" />
+  <project path="external/vixl" name="android_external_vixl" remote="pienine" />
+  <project path="external/zlib" name="android_external_zlib" remote="pienine" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="pienine" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="pienine" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="pienine" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="pienine" />
+  <project path="frameworks/support" name="android_frameworks_support" remote="pienine" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="pienine" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="pienine" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="pienine" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="android_hardware_qcom_data_ipacfg-mgr" remote="sixpie" revision="pie-r3ds" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="pienine" />
+  <project path="hardware/qcom/audio-caf-msm8916" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8916" />
+  <project path="hardware/qcom/audio-caf-msm8952" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8952" />
+  <project path="hardware/qcom/audio-caf-msm8960" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8960" />
+  <project path="hardware/qcom/audio-caf-msm8974" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8974" />
+  <project path="hardware/qcom/audio-caf-msm8994" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8994" />
+  <project path="hardware/qcom/audio-caf-msm8996" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8996" />
+  <project path="hardware/qcom/audio-caf-msm8998" name="android_hardware_qcom_audio" remote="pienine" revision="pie-caf-8998" />
+  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="pienine" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="pienine" />
+  <project path="hardware/qcom/display-caf-msm8916" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8916" />
+  <project path="hardware/qcom/display-caf-msm8952" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8952" />
+  <project path="hardware/qcom/display-caf-msm8960" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8960" />
+  <project path="hardware/qcom/display-caf-msm8974" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8974" />
+  <project path="hardware/qcom/display-caf-msm8994" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8994" />
+  <project path="hardware/qcom/display-caf-msm8996" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8996" />
+  <project path="hardware/qcom/display-caf-msm8998" name="android_hardware_qcom_display" remote="pienine" revision="pie-caf-8998" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="pienine" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="pienine" />
+  <project path="hardware/qcom/media-caf-msm8916" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8916" />
+  <project path="hardware/qcom/media-caf-msm8952" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8952" />
+  <project path="hardware/qcom/media-caf-msm8960" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8960" />
+  <project path="hardware/qcom/media-caf-msm8974" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8974" />
+  <project path="hardware/qcom/media-caf-msm8994" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8994" />
+  <project path="hardware/qcom/media-caf-msm8996" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8996" />
+  <project path="hardware/qcom/media-caf-msm8998" name="android_hardware_qcom_media" remote="pienine" revision="pie-caf-8998" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="pienine" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="pienine" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="pienine" />
+  <project path="hardware/ril-caf" name="android_hardware_qcom_ril" remote="pienine" />
+  <project path="libcore" name="android_libcore" remote="pienine" />
+  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="pienine" />
+  <project path="system/keymaster" name="android_system_keymaster" remote="pienine" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="pienine" />
+  <project path="system/netd" name="android_system_netd" remote="pienine" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="pienine" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="pienine" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="pienine" />
+  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="pienine" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="pienine" />
 
 </manifest>
