@@ -35,6 +35,7 @@
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="r3dmanx" revision="pie-r3ds" />
