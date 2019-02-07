@@ -40,6 +40,7 @@
   <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/Settings" name="oreo_packages_apps_Settings" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="r3dmanx" revision="pie-r3ds" />
