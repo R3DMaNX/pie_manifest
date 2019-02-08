@@ -49,6 +49,7 @@
   <project path="packages/apps/SixOTA" name="packages_apps_R3Ds_OTA" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="r3dmanx" revision="pie-r3ds" />
+  <project path="packages/apps/ThermalController" name="packages_apps_ThermalController" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/providers/AmbientPlayHistoryProvider" name="packages_providers_AmbientPlayHistoryProvider" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="r3dmanx" revision="pie-r3ds" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="r3dmanx" revision="pie-r3ds" />
